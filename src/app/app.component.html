@@ -1,4 +1,60 @@
-<!-- <div style="text-align:center">
-  <h1>Welcome to Movie App!</h1>
+
+<div class="centered-content">
+
+<!-- <app-text-input></app-text-input> -->
+<!-- <div *ngIf="data">
+  <ul>
+    <li *ngFor="let item of data">{{ item.title }}</li>
+  </ul>
 </div> -->
-<app-movie-list></app-movie-list>
+<!-- 
+<button (click)="postData()">Send POST Request</button>
+<button (click)="putData()">Send PUT Request</button>
+<button (click)="deleteData(1)">Delete Post with ID 1</button> -->
+
+<!-- <app-child [inputData]="parentData"></app-child> -->
+
+<!-- <app-child (outputData)="handleOutputData($event)"></app-child> -->
+
+<div *ngIf="outputData$ | async as outputData">
+  Data received from child: {{ outputData }}
+</div>
+</div>
+<!-- 
+<div>
+  <app-sender></app-sender>
+  <app-receiver></app-receiver>
+</div> -->
+
+<app-parent></app-parent>
+
+
+<!-- 
+<app-comm-second>
+ 
+</app-comm-second>
+<div style="align-items: center; margin-top: 80px;">
+  <button (click)="sharedDataService.setData({ message: 'so lets do this' })">
+    Set Data</button>
+  
+  
+    <div style="margin-top: 20px">
+      <button (click)="sharedDataService.setData({ message: 'diff message now' });">
+        Reset Message</button>
+  </div>
+  
+</div> -->
+
+<!-- <app-movie-list></app-movie-list> -->
+<!-- <app-number-list></app-number-list>
+<app-item-list></app-item-list> -->
+<!-- <app-click-demo></app-click-demo>
+<nav>
+  <ul>
+    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="/about">About</a></li>
+    <li><a routerLink="/contact">Contact</a></li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet> -->

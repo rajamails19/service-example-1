@@ -1,5 +1,6 @@
 <!-- src/app/movie-list/movie-list.component.html -->
-<h2>Movie List</h2>
+<div>
+<!-- <h2>Movie List</h2>
 <table>
   <thead>
     <tr>
@@ -15,4 +16,9 @@
       <td>{{ movie.body }}</td>
     </tr>
   </tbody>
-</table>
+</table> -->
+
+<div *ngIf="sharedData">
+  Shared Data: {{ sharedData.message }}
+</div>
+  </div>

@@ -1,0 +1,6 @@
+.centered-content {
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    min-height: 100vh;
+  }
